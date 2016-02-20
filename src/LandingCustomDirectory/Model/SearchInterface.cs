@@ -13,6 +13,7 @@ namespace LandingCustomDirectory.Model
     {
         public string ButtonCancel { get; set; }
         public string ButtonSearch { get; set; }
+        public string ButtonSettings { get; set; }
         public string Prompt { get; set; }
         public string SearchCountry { get; set; }
         public string SearchLastname { get; set; }
@@ -73,7 +74,15 @@ namespace LandingCustomDirectory.Model
                                   "<Name>" + ButtonCancel + "</Name>" + Environment.NewLine +
                                   "<URL>SoftKey:Cancel</URL>" + Environment.NewLine +
                                   "</SoftKeyItem>" + Environment.NewLine +
+
+                                  "<SoftKeyItem>" + Environment.NewLine +
+                                  "<Position>4</Position>" + Environment.NewLine +
+                                  "<Name>" + ButtonSettings + "</Name>" + Environment.NewLine +
+                                  "<URL>" + ConfigurationManager.AppSettings.Get("UrlSettings") + "</URL>" + Environment.NewLine +
+                                  "</SoftKeyItem>" + Environment.NewLine +
                                   "</CiscoIPPhoneInput>";
+
+
                 return SearchInterface;
         }
     }

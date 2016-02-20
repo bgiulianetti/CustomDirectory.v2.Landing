@@ -1,6 +1,7 @@
 ﻿{
   "ButtonCancel": "Cancel",
   "ButtonSearch": "Search",
+  "ButtonSettings": "Config",
   "Prompt": "Input search criteria",
   "SearchCountry": "Country",
   "SearchLastname": "Lastname",

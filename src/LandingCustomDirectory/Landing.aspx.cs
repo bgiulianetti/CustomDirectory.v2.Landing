@@ -78,7 +78,7 @@ namespace LandingCustomDirectory
         }
         private static SearchInterface CreateInterface()
         {
-            var landingTextPath = string.Format(ConfigurationManager.AppSettings.Get("LandingTextPath"), GetLanguage());
+            var landingTextPath = string.Format(ConfigurationManager.AppSettings.Get("LandingPath"), GetLanguage());
             using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath(landingTextPath)))
             {
                 string jsonFile = r.ReadToEnd();

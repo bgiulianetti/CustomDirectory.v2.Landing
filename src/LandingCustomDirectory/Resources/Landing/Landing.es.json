@@ -1,6 +1,7 @@
 ﻿{
   "ButtonCancel": "Cancel",
   "ButtonSearch": "Buscar",
+  "ButtonSettings": "Config",
   "Prompt": "Ingrese criterio de busqueda",
   "SearchCountry": "País",
   "SearchLastname": "Apellido",

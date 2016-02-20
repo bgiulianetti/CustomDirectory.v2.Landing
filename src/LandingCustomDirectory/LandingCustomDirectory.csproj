@@ -137,6 +137,7 @@
   <ItemGroup>
     <Content Include="CountryCodes.aspx" />
     <Content Include="Landing.aspx" />
+    <Content Include="Settings.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -158,16 +159,23 @@
     </Compile>
     <Compile Include="Model\SearchInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\publish.pubxml" />
-    <None Include="Resources\LandingText\LandingText.en.json" />
-    <None Include="Resources\LandingText\LandingText.es.json" />
-    <Content Include="Resources\LandingText\LandingText.fr.json" />
-    <Content Include="Resources\LandingText\LandingText.nl.json" />
-    <None Include="Resources\LandingText\LandingText.pt.json" />
-    <Content Include="Resources\LandingText\LandingText.de.json" />
+    <None Include="Resources\Landing\Landing.en.json" />
+    <None Include="Resources\Landing\Landing.es.json" />
+    <Content Include="Resources\Landing\Landing.fr.json" />
+    <Content Include="Resources\Landing\Landing.nl.json" />
+    <None Include="Resources\Landing\Landing.pt.json" />
+    <Content Include="Resources\Landing\Landing.de.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
