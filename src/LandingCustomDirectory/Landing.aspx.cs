@@ -76,26 +76,20 @@ namespace LandingCustomDirectory
                           "</CiscoIPPhoneInput>";
             return menu;
         }
-
         private static SearchInterface CreateInterface()
         {
-            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath("~/Resources/LandingText." + GetLanguage() + ".json")))
+            var landingTextPath = string.Format(ConfigurationManager.AppSettings.Get("LandingTextPath"), GetLanguage());
+            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath(landingTextPath)))
             {
                 string jsonFile = r.ReadToEnd();
                 var searchInterface = JsonConvert.DeserializeObject<SearchInterface>(jsonFile);
                 return searchInterface;
             }
         }
-
         private static string GetLanguage()
         {
-            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath("~/Resources/LandingText." + GetLanguage() + ".json")))
-            {
-                string languageCodeFile = r.ReadToEnd();
-                var languageCode = JsonConvert.DeserializeObject<string>(languageCodeFile);
-                return languageCode;
-            }
-            return "es";
+            var languageSetPath = ConfigurationManager.AppSettings.Get("LanguageSetPath");
+            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetPath));
         }
     }
 }

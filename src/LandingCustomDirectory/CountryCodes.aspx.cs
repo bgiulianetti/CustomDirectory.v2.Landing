@@ -11,10 +11,10 @@ namespace LandingCustomDirectory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var countryCodes = 
+            //var countryCodes = 
             //var xml = PrintXML(menu);
-            Response.ContentType = "text/xml";
-            Response.Write(menu);
+            //Response.ContentType = "text/xml";
+            //Response.Write(menu);
         }
     }
 }

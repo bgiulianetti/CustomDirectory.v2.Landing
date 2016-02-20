@@ -11,14 +11,14 @@ namespace LandingCustomDirectory.Model
 {
     public class SearchInterface
     {
-        public string ButtonCancel { get; protected set; }
-        public string ButtonSearch { get; protected set; }
-        public string Prompt { get; protected set; }
-        public string SearchCountry { get; protected set; }
-        public string SearchLastname { get; protected set; }
-        public string SearchName { get; protected set; }
-        public string SearchNumber { get; protected set; }
-        public string Title { get; protected set; }
+        public string ButtonCancel { get; set; }
+        public string ButtonSearch { get; set; }
+        public string Prompt { get; set; }
+        public string SearchCountry { get; set; }
+        public string SearchLastname { get; set; }
+        public string SearchName { get; set; }
+        public string SearchNumber { get; set; }
+        public string Title { get; set; }
 
         public string ToStringXML()
         {
