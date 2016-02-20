@@ -10,6 +10,6 @@
 namespace LandingCustomDirectory {
     
     
-    public partial class CountryCodes {
+    public partial class LanguageSettings {
     }
 }

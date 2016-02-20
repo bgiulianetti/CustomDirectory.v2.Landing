@@ -137,6 +137,7 @@
   <ItemGroup>
     <Content Include="CountryCodes.aspx" />
     <Content Include="Landing.aspx" />
+    <Content Include="LanguageSettings.aspx" />
     <Content Include="Settings.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -156,6 +157,13 @@
     </Compile>
     <Compile Include="Landing.aspx.designer.cs">
       <DependentUpon>Landing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageSettings.aspx.cs">
+      <DependentUpon>LanguageSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageSettings.aspx.designer.cs">
+      <DependentUpon>LanguageSettings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\SearchInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

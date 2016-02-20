@@ -1,3 +1,9 @@
 ﻿{
+  "Title": "Configuraciones",
+  "Prompt": "Seleccione una opción",
+  "ItemLanguageSettingsName": "Configuración de idioma",
+  "ItemLanguageSettingsUrl": "",
+  "ItemCountryCodesName": "Códigos de paises",
+  "ItemCountryCodesUrl": ""
 
 }

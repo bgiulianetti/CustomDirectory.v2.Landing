@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LanguageSettings.aspx.cs" Inherits="LandingCustomDirectory.LanguageSettings" %>
