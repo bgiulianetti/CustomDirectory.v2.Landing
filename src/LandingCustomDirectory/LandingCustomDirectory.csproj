@@ -136,10 +136,17 @@
     <Compile Include="Landing.aspx.designer.cs">
       <DependentUpon>Landing.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Model\SearchInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\publish.pubxml" />
+    <None Include="Resources\LandingText.en.json" />
+    <None Include="Resources\LandingText.es.json" />
+    <Content Include="Resources\LandingText.fr.json" />
+    <Content Include="Resources\LandingText.nl.json" />
+    <None Include="Resources\LandingText.pt.json" />
+    <Content Include="Resources\LandingText.de.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>

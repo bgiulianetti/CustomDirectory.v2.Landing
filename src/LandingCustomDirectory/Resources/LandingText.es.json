@@ -1,0 +1,10 @@
+﻿{
+  "ButtonCancel": "Cancel",
+  "ButtonSearch": "Buscar",
+  "Prompt": "Ingrese criterio de busqueda",
+  "SearchCountry": "País",
+  "SearchLastname": "Apellido",
+  "SearchName": "Nombre",
+  "SearchNumber": "Número",
+  "Title": "Directorio de Búsqueda"
+}
