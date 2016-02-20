@@ -1,3 +1,10 @@
 ﻿{
-
+  "ButtonCancel": "Cancel",
+  "ButtonSearch": "Search",
+  "Prompt": "Input search criteria",
+  "SearchCountry": "Country",
+  "SearchLastname": "Lastname",
+  "SearchName": "Name",
+  "SearchNumber": "Number",
+  "Title": "Unified Directory"
 }
