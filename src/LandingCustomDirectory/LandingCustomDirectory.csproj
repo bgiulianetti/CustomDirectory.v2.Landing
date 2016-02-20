@@ -176,6 +176,12 @@
     <Content Include="Resources\Landing\Landing.nl.json" />
     <None Include="Resources\Landing\Landing.pt.json" />
     <Content Include="Resources\Landing\Landing.de.json" />
+    <Content Include="Resources\Settings\Settings.de.json" />
+    <Content Include="Resources\Settings\Settings.en.json" />
+    <Content Include="Resources\Settings\Settings.es.json" />
+    <Content Include="Resources\Settings\Settings.fr.json" />
+    <Content Include="Resources\Settings\Settings.nl.json" />
+    <Content Include="Resources\Settings\Settings.pt.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
