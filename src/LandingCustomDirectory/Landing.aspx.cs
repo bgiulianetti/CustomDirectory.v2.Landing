@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LandingCustomDirectory.Model;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -15,56 +17,12 @@ namespace LandingCustomDirectory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var menu = CreateStringMenu();
-            //var xml = PrintXML(menu);
+            var searchInterface = CreateInterface();
             Response.ContentType = "text/xml";
-            Response.Write(menu);
+            Response.Write(searchInterface.ToStringXML());
         }
 
-
-        public static string PrintXML(string XML)
-        {
-            string Result = "";
-
-            MemoryStream mStream = new MemoryStream();
-            XmlTextWriter writer = new XmlTextWriter(mStream, Encoding.Unicode);
-            XmlDocument document = new XmlDocument();
-
-            try
-            {
-                // Load the XmlDocument with the XML.
-                document.LoadXml(XML);
-
-                writer.Formatting = Formatting.Indented;
-
-                // Write the XML into a formatting XmlTextWriter
-                document.WriteContentTo(writer);
-                writer.Flush();
-                mStream.Flush();
-
-                // Have to rewind the MemoryStream in order to read
-                // its contents.
-                mStream.Position = 0;
-
-                // Read MemoryStream contents into a StreamReader.
-                StreamReader sReader = new StreamReader(mStream);
-
-                // Extract the text from the StreamReader.
-                string FormattedXML = sReader.ReadToEnd();
-
-                Result = FormattedXML;
-            }
-            catch (XmlException)
-            {
-            }
-
-            mStream.Close();
-            writer.Close();
-
-            return Result;
-        }
-
-        public static string CreateStringMenu()
+        private static string CreateStringMenu()
         {
             string menu = "<CiscoIPPhoneInput>" + Environment.NewLine +
                           "<Title>Directorio de busqueda</Title>" + Environment.NewLine +
@@ -117,6 +75,27 @@ namespace LandingCustomDirectory
                           "</SoftKeyItem>" + Environment.NewLine +
                           "</CiscoIPPhoneInput>";
             return menu;
+        }
+
+        private static SearchInterface CreateInterface()
+        {
+            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath("~/Resources/LandingText." + GetLanguage() + ".json")))
+            {
+                string jsonFile = r.ReadToEnd();
+                var searchInterface = JsonConvert.DeserializeObject<SearchInterface>(jsonFile);
+                return searchInterface;
+            }
+        }
+
+        private static string GetLanguage()
+        {
+            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath("~/Resources/LandingText." + GetLanguage() + ".json")))
+            {
+                string languageCodeFile = r.ReadToEnd();
+                var languageCode = JsonConvert.DeserializeObject<string>(languageCodeFile);
+                return languageCode;
+            }
+            return "es";
         }
     }
 }

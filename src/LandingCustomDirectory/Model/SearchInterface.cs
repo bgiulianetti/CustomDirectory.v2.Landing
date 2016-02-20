@@ -1,19 +1,16 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Web;
 
 namespace LandingCustomDirectory.Model
 {
     public class SearchInterface
     {
-
-        public SearchInterface()
-        {
-
-        }
-
         public string ButtonCancel { get; protected set; }
         public string ButtonSearch { get; protected set; }
         public string Prompt { get; protected set; }
@@ -78,11 +75,6 @@ namespace LandingCustomDirectory.Model
                                   "</SoftKeyItem>" + Environment.NewLine +
                                   "</CiscoIPPhoneInput>";
                 return SearchInterface;
-        }
-
-        protected string GetLanguage()
-        {
-            return "es";
         }
     }
 }
