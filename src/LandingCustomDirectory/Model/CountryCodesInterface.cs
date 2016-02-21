@@ -18,14 +18,15 @@ namespace LandingCustomDirectory.Model
             var xmlBody = "<CiscoIPPhoneText>" + Environment.NewLine +
                           "<Title>" + Title + "</Title>" + Environment.NewLine +
                           "<Prompt>" + Prompt + "</Prompt>" + Environment.NewLine +
-                          "<Text>" + "linea 1" + Environment.NewLine + 
-                                     "linea 2" + 
-                          "</Text>" + Environment.NewLine +
-                          "</CiscoIPPhoneText>";
+                          "<Text>";
+
+            foreach (var item in Countries)
+                xmlBody += item + Environment.NewLine;
+
+            xmlBody += "</Text>" + Environment.NewLine + 
+                       "</CiscoIPPhoneText>";
 
             return xmlBody;
-
-
         }
     }
 

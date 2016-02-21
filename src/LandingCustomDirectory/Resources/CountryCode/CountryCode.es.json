@@ -1,6 +1,6 @@
 ﻿{
-  "Title": "Paises Disponibles",
-  "Prompt": "",
+  "Title": "Codigos de Paises",
+  "Prompt": "Listado de codigo de paises",
   "Countries": [
     "AR : Argentina",
     "AU : Australia",
