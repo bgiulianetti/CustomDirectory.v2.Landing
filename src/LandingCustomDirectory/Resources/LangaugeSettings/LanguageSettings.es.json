@@ -1,12 +1,12 @@
 ﻿{
   "Title": "Configuracion de Idioma",
   "Prompt": "Cambie el idioma del menu",
-  "ItemLanguagesAvailable": [
-    "Español",
-    "Ingles",
-    "Aleman",
-    "Frances",
-    "Portugues",
-    "Holandes"
+  "AvailableLanguages": [
+    "es:Español",
+    "en:Ingles",
+    "au:Aleman",
+    "fr:Frances",
+    "pt:Portugues",
+    "nl:Holandes"
   ]
 }

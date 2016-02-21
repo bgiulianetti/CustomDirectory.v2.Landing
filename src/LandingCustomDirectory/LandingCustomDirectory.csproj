@@ -167,6 +167,7 @@
       <DependentUpon>LanguageSettings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Model\CountryCodesInterface.cs" />
+    <Compile Include="Model\LanguageSettingsInterface.cs" />
     <Compile Include="Model\SearchInterface.cs" />
     <Compile Include="Model\SettingsInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
