@@ -180,11 +180,11 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\publish.pubxml" />
-    <None Include="Resources\Landing\Landing.en.json" />
-    <None Include="Resources\Landing\Landing.es.json" />
+    <Content Include="Resources\Landing\Landing.en.json" />
+    <Content Include="Resources\Landing\Landing.es.json" />
     <Content Include="Resources\Landing\Landing.fr.json" />
     <Content Include="Resources\Landing\Landing.nl.json" />
-    <None Include="Resources\Landing\Landing.pt.json" />
+    <Content Include="Resources\Landing\Landing.pt.json" />
     <Content Include="Resources\Landing\Landing.de.json" />
     <Content Include="Resources\Settings\Settings.de.json" />
     <Content Include="Resources\Settings\Settings.en.json" />
