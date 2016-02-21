@@ -88,8 +88,8 @@ namespace LandingCustomDirectory
         }
         private static string GetLanguage()
         {
-            var languageSetPath = ConfigurationManager.AppSettings.Get("LanguageSetPath");
-            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetPath));
+            var languageSetterPath = ConfigurationManager.AppSettings.Get("LanguageSetterPath");
+            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetterPath));
         }
     }
 }

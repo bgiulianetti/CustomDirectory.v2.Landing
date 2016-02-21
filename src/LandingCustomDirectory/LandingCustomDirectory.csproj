@@ -138,7 +138,7 @@
     <Content Include="CountryCodes.aspx" />
     <Content Include="Landing.aspx" />
     <Content Include="LanguageSettings.aspx" />
-    <Content Include="Resources\LangaugeSet\LanguageSet.txt" />
+    <Content Include="Resources\LangaugeSettings\Setter.txt" />
     <Content Include="Settings.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -199,12 +199,12 @@
     <Content Include="Resources\CountryCode\CountryCode.nl.json" />
     <Content Include="Resources\CountryCode\CountryCode.pt.json" />
     <Content Include="Resources\CountryCode\CountryCode.de.json" />
-    <Content Include="Resources\LangaugeSet\LanguageSettings.es.json" />
-    <Content Include="Resources\LangaugeSet\LanguageSettings.en.json" />
-    <Content Include="Resources\LangaugeSet\LanguageSettings.fr.json" />
-    <Content Include="Resources\LangaugeSet\LanguageSettings.pt.json" />
-    <Content Include="Resources\LangaugeSet\LanguageSettings.nl.json" />
-    <Content Include="Resources\LangaugeSet\LanguageSettings.de.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.es.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.en.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.fr.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.pt.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.nl.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.de.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
