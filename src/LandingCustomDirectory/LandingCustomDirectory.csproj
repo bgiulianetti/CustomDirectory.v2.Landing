@@ -166,6 +166,7 @@
     <Compile Include="LanguageSettings.aspx.designer.cs">
       <DependentUpon>LanguageSettings.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Model\CountryCodesInterface.cs" />
     <Compile Include="Model\SearchInterface.cs" />
     <Compile Include="Model\SettingsInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -192,6 +193,12 @@
     <Content Include="Resources\Settings\Settings.fr.json" />
     <Content Include="Resources\Settings\Settings.nl.json" />
     <Content Include="Resources\Settings\Settings.pt.json" />
+    <Content Include="Resources\CountryCode\CountryCode.es.json" />
+    <Content Include="Resources\CountryCode\CountryCode.en.json" />
+    <Content Include="Resources\CountryCode\CountryCode.fr.json" />
+    <Content Include="Resources\CountryCode\CountryCode.nl.json" />
+    <Content Include="Resources\CountryCode\CountryCode.pt.json" />
+    <Content Include="Resources\CountryCode\CountryCode.de.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>

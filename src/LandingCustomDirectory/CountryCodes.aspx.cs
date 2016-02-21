@@ -1,5 +1,9 @@
-﻿using System;
+﻿using LandingCustomDirectory.Model;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,10 +15,26 @@ namespace LandingCustomDirectory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //var countryCodes = 
-            //var xml = PrintXML(menu);
-            //Response.ContentType = "text/xml";
-            //Response.Write(menu);
+            var countryCodesInterface = CreateInterface();
+            Response.ContentType = "text/xml";
+            Response.Write(countryCodesInterface.ToStringXML());
+        }
+
+        private static CountryCodesInterface CreateInterface()
+        {
+            var landingTextPath = string.Format(ConfigurationManager.AppSettings.Get("CountryCodesPath"), GetLanguage());
+            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath(landingTextPath)))
+            {
+                string jsonFile = r.ReadToEnd();
+                var countryCodesInterface = JsonConvert.DeserializeObject<CountryCodesInterface>(jsonFile);
+                return countryCodesInterface;
+            }
+        }
+
+        private static string GetLanguage()
+        {
+            var languageSetPath = ConfigurationManager.AppSettings.Get("LanguageSetPath");
+            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetPath));
         }
     }
 }
