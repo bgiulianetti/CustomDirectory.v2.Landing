@@ -1,6 +1,6 @@
 ﻿{
   "Title": "Country Codes",
-  "Prompt": "List of all available country codes",
+  "Prompt": "List of all country codes",
   "Countries": [
     "AR : Argentine",
     "AU : Australia",
@@ -8,7 +8,7 @@
     "BR : Brazil",
     "CL : Chile",
     "CO : Colombia",
-    "DE : Australia",
+    "DE : Germany",
     "ES : Spain",
     "FR : France",
     "MX : Mexico",
