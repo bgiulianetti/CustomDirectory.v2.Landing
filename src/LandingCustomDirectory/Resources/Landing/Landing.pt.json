@@ -1,3 +1,11 @@
 ﻿{
-
+  "ButtonCancel": "Cancel",
+  "ButtonSearch": "Buscar",
+  "ButtonSettings": "Config",
+  "Prompt": "Ingrese criterio de busqueda",
+  "SearchCountry": "Pais",
+  "SearchLastname": "Apellido",
+  "SearchName": "Nombre",
+  "SearchNumber": "Numero",
+  "Title": "Directorio Unificado"
 }

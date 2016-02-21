@@ -199,6 +199,12 @@
     <Content Include="Resources\CountryCode\CountryCode.nl.json" />
     <Content Include="Resources\CountryCode\CountryCode.pt.json" />
     <Content Include="Resources\CountryCode\CountryCode.de.json" />
+    <Content Include="Resources\LangaugeSet\LanguageSettings.es.json" />
+    <Content Include="Resources\LangaugeSet\LanguageSettings.en.json" />
+    <Content Include="Resources\LangaugeSet\LanguageSettings.fr.json" />
+    <Content Include="Resources\LangaugeSet\LanguageSettings.pt.json" />
+    <Content Include="Resources\LangaugeSet\LanguageSettings.nl.json" />
+    <Content Include="Resources\LangaugeSet\LanguageSettings.de.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>

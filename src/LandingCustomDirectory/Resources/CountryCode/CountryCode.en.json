@@ -1,3 +1,23 @@
 ﻿{
-
+  "Title": "Country Codes",
+  "Prompt": "List of all available country codes",
+  "Countries": [
+    "AR : Argentine",
+    "AU : Australia",
+    "BO : Bolivia",
+    "BR : Brazil",
+    "CL : Chile",
+    "CO : Colombia",
+    "DE : Australia",
+    "ES : Spain",
+    "FR : France",
+    "MX : Mexico",
+    "NL : Netherlands",
+    "PE : Peru",
+    "PY : Paraguay",
+    "US : United States of America",
+    "UK : United Kingdon",
+    "UY : Uruguay",
+    "VE : Venezuela"
+  ]
 }

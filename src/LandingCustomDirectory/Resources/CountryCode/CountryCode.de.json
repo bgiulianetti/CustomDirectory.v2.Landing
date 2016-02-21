@@ -1,3 +1,23 @@
 ﻿{
-
+  "Title": "Codigos de Paises",
+  "Prompt": "Listado de codigo de paises",
+  "Countries": [
+    "AR : Argentina",
+    "AU : Australia",
+    "BO : Bolivia",
+    "BR : Brasil",
+    "CL : Chile",
+    "CO : Colombia",
+    "DE : Australia",
+    "ES : España",
+    "FR : Francia",
+    "MX : Mexico",
+    "NL : Holanda",
+    "PE : Peru",
+    "PY : Paraguay",
+    "US : Estados Unidos",
+    "UK : Reino Unido",
+    "UY : Uruguay",
+    "VE : Venezuela"
+  ]
 }

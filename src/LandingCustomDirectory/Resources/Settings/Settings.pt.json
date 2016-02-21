@@ -1,3 +1,9 @@
 ﻿{
-  
+  "Title": "Configuraciones",
+  "Prompt": "Seleccione una opcion",
+  "ItemLanguageSettingsName": "Configuracion de Idioma",
+  "ItemLanguageSettingsUrl": "LanguageSettings.aspx",
+  "ItemCountryCodesName": "Codigos de Paises",
+  "ItemCountryCodesUrl": "CountryCodes.aspx"
+
 }
