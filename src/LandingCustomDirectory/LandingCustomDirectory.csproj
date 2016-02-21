@@ -139,6 +139,7 @@
     <Content Include="Landing.aspx" />
     <Content Include="LanguageSettings.aspx" />
     <Content Include="Resources\LangaugeSettings\Setter.txt" />
+    <Content Include="Setter.txt" />
     <Content Include="Settings.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
