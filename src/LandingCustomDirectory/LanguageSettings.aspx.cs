@@ -33,7 +33,6 @@ namespace LandingCustomDirectory
                 var file = new StreamWriter(HttpContext.Current.Server.MapPath(langaugeSetterPath));
                 file.WriteLine(language);
                 file.Close();
-                //var url = ConfigurationManager.AppSettings.Get("Url.Localhost") + "LanguageSettings.aspx";
                 Response.Redirect("~/LanguageSettings.aspx", false);
             }
             catch (Exception ex)

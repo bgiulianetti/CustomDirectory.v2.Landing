@@ -34,7 +34,7 @@ namespace LandingCustomDirectory
         private static string GetLanguage()
         {
             var languageSetterPath = ConfigurationManager.AppSettings.Get("LanguageSetterPath");
-            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetterPath));
+            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetterPath)).Replace("\r\n", "");
         }
     }
 }
