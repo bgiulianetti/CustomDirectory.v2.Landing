@@ -1,5 +1,9 @@
-﻿using System;
+﻿using LandingCustomDirectory.Model;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,28 +15,26 @@ namespace LandingCustomDirectory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var settingsInterface = CreateInterface();
+            Response.ContentType = "text/xml";
+            Response.Write(settingsInterface.ToStringXML());
         }
 
-        private string PrintXml()
+        private static SettingsInterface CreateInterface()
         {
-            var xmlBody = "<CiscoIPPhoneMenu>" + Environment.NewLine +
-                          "<Title>Title text goes here </Title>" + Environment.NewLine +
-                          "<Prompt>Prompt text goes here </Prompt>" + Environment.NewLine +
-                          
-                          "<MenuItem>" + Environment.NewLine +
-                          "<Name>The name of each menu item </Name>" + Environment.NewLine +
-                          "<URL>The URL associated with the menu item</URL>" + Environment.NewLine +
-                          "</MenuItem>" + Environment.NewLine +
+            var landingTextPath = string.Format(ConfigurationManager.AppSettings.Get("SettingsPath"), GetLanguage());
+            using (StreamReader r = new StreamReader(HttpContext.Current.Server.MapPath(landingTextPath)))
+            {
+                string jsonFile = r.ReadToEnd();
+                var ssettingsInterface = JsonConvert.DeserializeObject<SettingsInterface>(jsonFile);
+                return ssettingsInterface;
+            }
+        }
 
-                          "<MenuItem>" + Environment.NewLine +
-                          "<Name>The name of each menu item </Name>" + Environment.NewLine +
-                          "<URL>The URL associated with the menu item</URL>" + Environment.NewLine +
-                          "</MenuItem>" + Environment.NewLine +
-
-                          "</CiscoIPPhoneMenu>";
-
-            return null;
+        private static string GetLanguage()
+        {
+            var languageSetPath = ConfigurationManager.AppSettings.Get("LanguageSetPath");
+            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetPath));
         }
     }
 }

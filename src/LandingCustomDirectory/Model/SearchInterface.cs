@@ -78,7 +78,7 @@ namespace LandingCustomDirectory.Model
                                   "<SoftKeyItem>" + Environment.NewLine +
                                   "<Position>4</Position>" + Environment.NewLine +
                                   "<Name>" + ButtonSettings + "</Name>" + Environment.NewLine +
-                                  "<URL>" + ConfigurationManager.AppSettings.Get("UrlSettings") + "</URL>" + Environment.NewLine +
+                                  "<URL>" + ConfigurationManager.AppSettings.Get("Url.Localhost") + "Settings.aspx" + "</URL>" + Environment.NewLine +
                                   "</SoftKeyItem>" + Environment.NewLine +
                                   "</CiscoIPPhoneInput>";
 
