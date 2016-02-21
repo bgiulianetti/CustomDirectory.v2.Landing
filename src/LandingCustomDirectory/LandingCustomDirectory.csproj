@@ -138,6 +138,7 @@
     <Content Include="CountryCodes.aspx" />
     <Content Include="Landing.aspx" />
     <Content Include="LanguageSettings.aspx" />
+    <Content Include="Resources\LangaugeSet\LanguageSet.txt" />
     <Content Include="Settings.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
