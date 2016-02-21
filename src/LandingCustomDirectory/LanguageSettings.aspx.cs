@@ -29,11 +29,17 @@ namespace LandingCustomDirectory
         {
             try
             {
-                var file = new StreamWriter(ConfigurationManager.AppSettings.Get("LanguageSetterPath"));
+                var langaugeSetterPath = string.Format(ConfigurationManager.AppSettings.Get("LanguageSetterPath"), GetLanguage());
+                var file = new StreamWriter(HttpContext.Current.Server.MapPath(langaugeSetterPath));
                 file.WriteLine(language);
-                Response.Redirect(ConfigurationManager.AppSettings.Get("Url.Localhost") + "LanguageSettings.aspx");
+                file.Close();
+                //var url = ConfigurationManager.AppSettings.Get("Url.Localhost") + "LanguageSettings.aspx";
+                Response.Redirect("~/LanguageSettings.aspx", false);
             }
-            catch { }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         private static LanguageSettingsInterface CreateInterface()
@@ -50,7 +56,8 @@ namespace LandingCustomDirectory
         private static string GetLanguage()
         {
             var languageSetterPath = ConfigurationManager.AppSettings.Get("LanguageSetterPath");
-            return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetterPath));
+            var language =  File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetterPath)).Replace("\r\n", "");
+            return language;
         }
     }
 }

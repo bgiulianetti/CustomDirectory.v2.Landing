@@ -24,7 +24,8 @@ namespace LandingCustomDirectory.Model
                 var langauge = item.Split(':');
                 xmlBody += "<MenuItem>" + Environment.NewLine +
                            "<Name>" + langauge[1] + "</Name>" + Environment.NewLine +
-                           "<URL>" + ConfigurationManager.AppSettings.Get("Url.Localhost") + "LanguageSettings.aspx?language=" + langauge[0] + "</URL>" + Environment.NewLine;
+                           "<URL>" + ConfigurationManager.AppSettings.Get("Url.Localhost") + "LanguageSettings.aspx?language=" + langauge[0] + "</URL>" + Environment.NewLine +
+                           "</MenuItem>" + Environment.NewLine;
             }
             xmlBody += "</CiscoIPPhoneMenu>";
 

@@ -1,3 +1,12 @@
 ﻿{
-
+  "Title": "Language Settings",
+  "Prompt": "Change the menu language",
+  "AvailableLanguages": [
+    "es:Spanish",
+    "en:English",
+    "au:German",
+    "fr:French",
+    "pt:Portuguese",
+    "nl:Dutch"
+  ]
 }
