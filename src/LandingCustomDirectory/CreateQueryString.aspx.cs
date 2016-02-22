@@ -22,19 +22,14 @@ namespace LandingCustomDirectory
                     Response.Redirect(countryCode, false);
                 }
             }
-            else
-            {
-                var landing = ConfigurationManager.AppSettings.Get("Url.Localhost");
-                landing += "Landing.aspx" + "?search=true" +
-                                            "&f=" + Request.QueryString["f"] +
-                                            "&l=" + Request.QueryString["l"] +
-                                            "&n=" + Request.QueryString["n"] +
-                                            "&p=" + p;
-                Response.Redirect(landing, false);
-            }
 
-            
-
+            var landing = ConfigurationManager.AppSettings.Get("Url.Localhost");
+            landing += "Landing.aspx" + "?search=true" +
+                                        "&f=" + Request.QueryString["f"] +
+                                        "&l=" + Request.QueryString["l"] +
+                                        "&n=" + Request.QueryString["n"] +
+                                        "&p=" + p;
+            Response.Redirect(landing, false);
         }
 
         private string ValidateCountry(string country)
