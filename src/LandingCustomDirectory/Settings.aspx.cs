@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,6 +17,9 @@ namespace LandingCustomDirectory
         protected void Page_Load(object sender, EventArgs e)
         {
             var settingsInterface = CreateInterface();
+
+            Encoding encoding = Encoding.UTF8;
+            Response.Charset = encoding.EncodingName;
             Response.ContentType = "text/xml";
             Response.Write(settingsInterface.ToStringXML());
         }

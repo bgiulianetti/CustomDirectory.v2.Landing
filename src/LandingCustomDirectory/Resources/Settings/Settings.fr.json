@@ -4,6 +4,7 @@
   "ItemLanguageSettingsName": "Configuracion de Idioma",
   "ItemLanguageSettingsUrl": "LanguageSettings.aspx",
   "ItemCountryCodesName": "Codigos de Paises",
-  "ItemCountryCodesUrl": "CountryCodes.aspx"
-
+  "ItemCountryCodesUrl": "CountryCodes.aspx",
+  "ButtonSelect": "Select-SoftKey:Submit",
+  "ButtonCancel": "Cancel-landing.aspx"
 }
