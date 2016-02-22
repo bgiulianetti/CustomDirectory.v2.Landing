@@ -1,8 +1,8 @@
 ﻿{
-  "Title": "Configuración de Idioma",
+  "Title": "Configuracion de Idioma",
   "Prompt": "Cambie el idioma del menu",
   "AvailableLanguages": [
-    "es:Español",
+    "es:Espanol",
     "en:Ingles",
     "au:Aleman",
     "fr:Frances",

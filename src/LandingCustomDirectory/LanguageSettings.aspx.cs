@@ -33,8 +33,8 @@ namespace LandingCustomDirectory
                 var file = new StreamWriter(HttpContext.Current.Server.MapPath(langaugeSetterPath));
                 file.WriteLine(language);
                 file.Close();
-                var languageSettings = ConfigurationManager.AppSettings.Get("Url.Localhost") + "LanguageSettings.aspx";
-                Response.Redirect(languageSettings, false);
+                var landing = ConfigurationManager.AppSettings.Get("Url.Localhost") + "Landing.aspx";
+                Response.Redirect(landing, false);
             }
             catch (Exception ex)
             {
