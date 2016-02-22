@@ -17,6 +17,17 @@ namespace LandingCustomDirectory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Request.QueryString["search"] == "true")
+            {
+                var directorySearch = ConfigurationManager.AppSettings.Get("Url");
+                directorySearch += "?f=" + Request.QueryString["f"] +
+                                   "&l=" + Request.QueryString["l"] +
+                                   "&n=" + Request.QueryString["n"] +
+                                   "&p=" + Request.QueryString["p"];
+
+                Response.Redirect(directorySearch, false);
+            }
+
             var searchInterface = CreateInterface();
             Response.ContentType = "text/xml; charset=utf-8";
             Response.Write(searchInterface.ToStringXML());
@@ -91,5 +102,6 @@ namespace LandingCustomDirectory
             var languageSetterPath = ConfigurationManager.AppSettings.Get("LanguageSetterPath");
             return File.ReadAllText(HttpContext.Current.Server.MapPath(languageSetterPath)).Replace("\r\n", "");
         }
+
     }
 }
