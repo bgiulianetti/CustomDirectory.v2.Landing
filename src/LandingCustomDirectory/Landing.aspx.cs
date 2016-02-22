@@ -18,7 +18,7 @@ namespace LandingCustomDirectory
         protected void Page_Load(object sender, EventArgs e)
         {
             var searchInterface = CreateInterface();
-            Response.ContentType = "text/xml";
+            Response.ContentType = "text/xml; charset=utf-8";
             Response.Write(searchInterface.ToStringXML());
         }
 

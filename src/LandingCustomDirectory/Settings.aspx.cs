@@ -17,10 +17,7 @@ namespace LandingCustomDirectory
         protected void Page_Load(object sender, EventArgs e)
         {
             var settingsInterface = CreateInterface();
-
-            Encoding encoding = Encoding.UTF8;
-            Response.Charset = encoding.EncodingName;
-            Response.ContentType = "text/xml";
+            Response.ContentType = "text/xml; charset=utf-8";
             Response.Write(settingsInterface.ToStringXML());
         }
 

@@ -40,7 +40,7 @@ namespace LandingCustomDirectory.Model
             xmlBody += "<SoftKeyItem>" + Environment.NewLine +
                        "<Position>1</Position>" + Environment.NewLine +
                        "<Name>" + selectButton[0] + "</Name>" + Environment.NewLine +
-                       "<URL" + selectButton[1] + "</URL>" + Environment.NewLine +
+                       "<URL>" + selectButton[1] + "</URL>" + Environment.NewLine +
                        "</SoftKeyItem>" + Environment.NewLine +
 
                        "<SoftKeyItem>" + Environment.NewLine +
