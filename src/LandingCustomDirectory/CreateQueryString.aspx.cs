@@ -18,7 +18,7 @@ namespace LandingCustomDirectory
                 p = ValidateCountry(Request.QueryString["p"].ToLower());
                 if (p == string.Empty)
                 {
-                    var countryCode = ConfigurationManager.AppSettings.Get("Url.Localhost") + "CountryCode.aspx";
+                    var countryCode = ConfigurationManager.AppSettings.Get("Url.Localhost") + "CountryCodes.aspx";
                     Response.Redirect(countryCode, false);
                 }
             }
