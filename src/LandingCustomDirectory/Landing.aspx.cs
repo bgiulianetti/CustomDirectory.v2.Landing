@@ -27,10 +27,12 @@ namespace LandingCustomDirectory
 
                 Response.Redirect(directorySearch, false);
             }
-
-            var searchInterface = CreateInterface();
-            Response.ContentType = "text/xml; charset=utf-8";
-            Response.Write(searchInterface.ToStringXML());
+            else
+            {
+                var searchInterface = CreateInterface();
+                Response.ContentType = "text/xml; charset=utf-8";
+                Response.Write(searchInterface.ToStringXML());
+            }
         }
 
         private static string CreateStringMenu()
