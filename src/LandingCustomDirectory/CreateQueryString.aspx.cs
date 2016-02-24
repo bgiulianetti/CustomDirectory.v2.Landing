@@ -19,7 +19,7 @@ namespace LandingCustomDirectory
                 if (p == string.Empty)
                 {
                     var countryCode = ConfigurationManager.AppSettings.Get("Url.Localhost") + "CountryCodes.aspx";
-                    Response.Redirect(countryCode, false);
+                    Response.Redirect(countryCode, true);
                 }
             }
 
@@ -52,13 +52,13 @@ namespace LandingCustomDirectory
                 return "pe";
             if (country == "py" || country == "par" || country == "para" || country == "parag" || country == "paragu" || country == "paragua" || country == "paraguay" || country == "araguay" || country == "praguay" || country == "oaraguay" || country == "parauay" || country == "paraguai")
                 return "py";
-            if (country == "us" || country == "est" || country == "esta" || country == "estad" || country == "estado" || country == "estados" || country == "unidos" || country == "estados unidos" || country == "estado unidos" || country == "estados unido" || country == "america" || country == "america del norte" || country == "estados unidos de america")
+            if (country == "us" || country == "est" || country == "esta" || country == "estad" || country == "estado" || country == "estados" || country == "unidos" || country == "estados unidos" || country == "estado unidos" || country == "estados unido" || country == "america" || country == "america del norte" || country == "estados unidos de america" || country == "eeuu" || country == "usa" || country == "u.s.a." || country == "ee.uu")
                 return "us";
             if (country == "uk" || country == "rei" || country == "rein" || country == "reino" || country == "reino unido" || country == "rino unido")
                 return "uk";
             if (country == "ve" || country == "ven" || country == "vene" || country == "venez" || country == "venezu" || country == "venezue" || country == "venezuel" || country == "venezuela")
                 return "ve";
-            if (country == "cl" || country == "ch" || country == "chi" || country == "chil" || country == "chile" || country == "chle" || country == "hile" || country == "chie" || country == "cile" || country == "putos")
+            if (country == "cl" || country == "ch" || country == "chi" || country == "chil" || country == "chile" || country == "chle" || country == "hile" || country == "chie" || country == "cile")
                 return "cl";
             if (country == "de" || country == "al" || country == "ale" || country == "alem" || country == "alema" || country == "aleman" || country == "alemani" || country == "alemania" || country == "aemania" || country == "alemaia")
                 return "de";
