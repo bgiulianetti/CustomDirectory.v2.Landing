@@ -1,5 +1,5 @@
 ﻿{
-  "Title": "Codigos de Paises",
+  "Title": "Codigos de Pais",
   "Prompt": "Listado de codigo de paises",
   "Countries": [
     "AR : Argentina",
@@ -8,9 +8,9 @@
     "BR : Brasil",
     "CL : Chile",
     "CO : Colombia",
-    "DE : Australia",
+    "DE : Alemania",
     "ES : Espana",
-    "FR : Francia",
+    "FR : França",
     "MX : Mexico",
     "NL : Holanda",
     "PE : Peru",
