@@ -1,11 +1,11 @@
 ﻿{
-  "ButtonCancel": "Cancel",
-  "ButtonSearch": "Buscar",
+  "ButtonCancel": "Annuler",
+  "ButtonSearch": "Chercher",
   "ButtonSettings": "Config",
-  "Prompt": "Ingrese criterio de busqueda",
-  "SearchCountry": "Pais",
-  "SearchLastname": "Apellido",
-  "SearchName": "Nombre",
+  "Prompt": "Entrez les critères de recherche",
+  "SearchCountry": "Pays",
+  "SearchLastname": "Prénom",
+  "SearchName": "Nom ",
   "SearchNumber": "Numero",
-  "Title": "Directorio Unificado"
+  "Title": "Répertoire unifiée"
 }
