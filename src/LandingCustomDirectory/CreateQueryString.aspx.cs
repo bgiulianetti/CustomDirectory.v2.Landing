@@ -29,7 +29,7 @@ namespace LandingCustomDirectory
                                         "&l=" + Request.QueryString["l"] +
                                         "&n=" + Request.QueryString["n"] +
                                         "&p=" + p;
-            Response.Redirect(landing, false);
+            Response.Redirect(landing, true);
         }
 
         private string ValidateCountry(string country)
