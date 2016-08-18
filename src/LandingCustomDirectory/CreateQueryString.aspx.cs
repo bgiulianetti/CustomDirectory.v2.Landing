@@ -13,7 +13,7 @@ namespace LandingCustomDirectory
         protected void Page_Load(object sender, EventArgs e)
         {
             string p = string.Empty;
-            if (!String.IsNullOrEmpty(Request.QueryString["p"]))//  Request.QueryString["p"] != null && Request.QueryString["p"] != string.Empty)
+            if (!String.IsNullOrEmpty(Request.QueryString["p"]))
             {
                 p = ValidateCountry(Request.QueryString["p"].ToLower());
                 if (p == string.Empty)
