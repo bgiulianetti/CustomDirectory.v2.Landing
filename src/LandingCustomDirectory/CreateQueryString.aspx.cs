@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LandingCustomDirectory.Model;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -22,7 +23,6 @@ namespace LandingCustomDirectory
                     Response.Redirect(countryCode, true);
                 }
             }
-
             var landing = ConfigurationManager.AppSettings.Get("Url.Localhost");
             landing += "Landing.aspx" + "?search=true" +
                                         "&f=" + Request.QueryString["f"] +

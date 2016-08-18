@@ -24,7 +24,6 @@ namespace LandingCustomDirectory
                                    "&l=" + Request.QueryString["l"] +
                                    "&n=" + Request.QueryString["n"] +
                                    "&p=" + Request.QueryString["p"];
-
                 Response.Redirect(directorySearch, false);
             }
             else
@@ -35,60 +34,6 @@ namespace LandingCustomDirectory
             }
         }
 
-        private static string CreateStringMenu()
-        {
-            string menu = "<CiscoIPPhoneInput>" + Environment.NewLine +
-                          "<Title>Directorio de busqueda</Title>" + Environment.NewLine +
-                          "<Prompt>Ingrese criterio de busqueda</Prompt>" + Environment.NewLine +
-                          "<URL>" + ConfigurationManager.AppSettings.Get("Url") + "</URL>" + Environment.NewLine +
-
-                          "<InputItem>" + Environment.NewLine +
-                          "<DisplayName>Nombre</DisplayName>" + Environment.NewLine +
-                          "<QueryStringParam>f</QueryStringParam>" + Environment.NewLine +
-                          "<InputFlags>A</InputFlags>" + Environment.NewLine +
-                          "<DefaultValue></DefaultValue>" + Environment.NewLine +
-                          "</InputItem>" + Environment.NewLine +
-
-                          "<InputItem>" + Environment.NewLine +
-                          "<DisplayName>Apellido</DisplayName>" + Environment.NewLine +
-                          "<QueryStringParam>l</QueryStringParam>" + Environment.NewLine +
-                          "<InputFlags>A</InputFlags>" + Environment.NewLine +
-                          "<DefaultValue></DefaultValue>" + Environment.NewLine +
-                          "</InputItem>" + Environment.NewLine +
-
-                          "<InputItem>" + Environment.NewLine +
-                          "<DisplayName>Numero</DisplayName>" + Environment.NewLine +
-                          "<QueryStringParam>n</QueryStringParam>" + Environment.NewLine +
-                          "<InputFlags>T</InputFlags>" + Environment.NewLine +
-                          "<DefaultValue></DefaultValue>" + Environment.NewLine +
-                          "</InputItem>" + Environment.NewLine +
-
-                          "<InputItem>" + Environment.NewLine +
-                          "<DisplayName>Pais</DisplayName>" + Environment.NewLine +
-                          "<QueryStringParam>p</QueryStringParam>" + Environment.NewLine +
-                          "<InputFlags>A</InputFlags>" + Environment.NewLine +
-                          "<DefaultValue></DefaultValue>" + Environment.NewLine +
-                          "</InputItem>" + Environment.NewLine +
-
-
-                          "<SoftKeyItem>" + Environment.NewLine +
-                          "<Position>1</Position>" + Environment.NewLine +
-                          "<Name>Buscar</Name>" + Environment.NewLine +
-                          "<URL>SoftKey:Submit</URL>" + Environment.NewLine +
-                          "</SoftKeyItem>" + Environment.NewLine +
-                          "<SoftKeyItem>" + Environment.NewLine +
-                          "<Position>2</Position>" + Environment.NewLine +
-                          "<Name>&lt;&lt;</Name>" + Environment.NewLine +
-                          "<URL>SoftKey:&lt;&lt;</URL>" + Environment.NewLine +
-                          "</SoftKeyItem>" + Environment.NewLine +
-                          "<SoftKeyItem>" + Environment.NewLine +
-                          "<Position>3</Position>" + Environment.NewLine +
-                          "<Name>Cancel</Name>" + Environment.NewLine +
-                          "<URL>SoftKey:Cancel</URL>" + Environment.NewLine +
-                          "</SoftKeyItem>" + Environment.NewLine +
-                          "</CiscoIPPhoneInput>";
-            return menu;
-        }
         private static SearchInterface CreateInterface()
         {
             var landingTextPath = string.Format(ConfigurationManager.AppSettings.Get("LandingPath"), GetLanguage());
