@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateQueryString.aspx.cs" Inherits="LandingCustomDirectory.CreateQueryString" %>
