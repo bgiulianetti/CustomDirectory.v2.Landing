@@ -26,7 +26,6 @@ namespace LandingCustomDirectory.Model
             var SearchInterface = "<CiscoIPPhoneInput>" + Environment.NewLine +
                                   "<Title>" + Title + "</Title>" + Environment.NewLine +
                                   "<Prompt>" + Prompt + "</Prompt>" + Environment.NewLine +
-                                  //"<URL>" + ConfigurationManager.AppSettings.Get("Url.Localhost") + "CreateQueryString.aspx" + "</URL>" + Environment.NewLine +
                                   "<URL>" + ConfigurationManager.AppSettings.Get("Url") + "</URL>" + Environment.NewLine +
 
                                   "<InputItem>" + Environment.NewLine +

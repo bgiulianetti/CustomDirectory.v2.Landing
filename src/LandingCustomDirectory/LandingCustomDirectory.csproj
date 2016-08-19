@@ -136,7 +136,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CountryCodes.aspx" />
-    <Content Include="CreateQueryString.aspx" />
     <Content Include="Landing.aspx" />
     <Content Include="LanguageSettings.aspx" />
     <Content Include="Resources\LangaugeSettings\Setter.txt" />
@@ -152,13 +151,6 @@
     </Compile>
     <Compile Include="CountryCodes.aspx.designer.cs">
       <DependentUpon>CountryCodes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CreateQueryString.aspx.cs">
-      <DependentUpon>CreateQueryString.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CreateQueryString.aspx.designer.cs">
-      <DependentUpon>CreateQueryString.aspx</DependentUpon>
     </Compile>
     <Compile Include="Landing.aspx.cs">
       <DependentUpon>Landing.aspx</DependentUpon>

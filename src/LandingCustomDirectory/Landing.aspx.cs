@@ -17,23 +17,9 @@ namespace LandingCustomDirectory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-            if(Request.QueryString["search"] == "true")
-            {
-                var directorySearch = ConfigurationManager.AppSettings.Get("Url");
-                directorySearch += "?f=" + Request.QueryString["f"] +
-                                   "&l=" + Request.QueryString["l"] +
-                                   "&n=" + Request.QueryString["n"] +
-                                   "&p=" + Request.QueryString["p"];
-                Response.Redirect(directorySearch, false);
-            }
-            else
-            {
-            */
                 var searchInterface = CreateInterface();
                 Response.ContentType = "text/xml; charset=utf-8";
                 Response.Write(searchInterface.ToStringXML());
-            //}
         }
 
         private static SearchInterface CreateInterface()
