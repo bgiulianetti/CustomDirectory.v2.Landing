@@ -1,6 +1,6 @@
 ﻿{
-  "Title": "Configuracion de Idioma",
-  "Prompt": "Cambie el idioma del menu",
+  "Title": "Paramètres de langue",
+  "Prompt": "Changer la langue du menu",
   "AvailableLanguages": [
     "es:Espagnol",
     "en:Anglais",

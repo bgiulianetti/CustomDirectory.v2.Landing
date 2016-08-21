@@ -1,12 +1,12 @@
 ﻿{
-  "Title": "Configuracion de Idioma",
-  "Prompt": "Cambie el idioma del menu",
+  "Title": "Taalinstellingen",
+  "Prompt": "Verander de menutaal",
   "AvailableLanguages": [
-    "es:Espanol",
-    "en:Ingles",
-    "de:Aleman",
-    "fr:Frances",
-    "pt:Portugues",
-    "nl:Holandes"
+    "es:Spaans",
+    "en:Engels",
+    "de:Duits",
+    "fr:Frans",
+    "pt:Portugees",
+    "nl:Nederlands"
   ]
 }

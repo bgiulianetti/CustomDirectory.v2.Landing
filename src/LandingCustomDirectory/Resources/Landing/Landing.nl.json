@@ -1,11 +1,11 @@
 ﻿{
-  "ButtonCancel": "Cancel",
-  "ButtonSearch": "Buscar",
+  "ButtonCancel": "Annuleren",
+  "ButtonSearch": "Zoeken",
   "ButtonSettings": "Config",
-  "Prompt": "Ingrese criterio de busqueda",
-  "SearchCountry": "Pais",
-  "SearchLastname": "Apellido",
-  "SearchName": "Nombre",
-  "SearchNumber": "Numero",
-  "Title": "Directorio Unificado"
+  "Prompt": "Voer zoekcriteria",
+  "SearchCountry": "Land",
+  "SearchLastname": "Achternaam",
+  "SearchName": "Naam",
+  "SearchNumber": "Nummer",
+  "Title": "Unified Directory"
 }
