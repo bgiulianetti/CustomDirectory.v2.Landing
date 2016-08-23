@@ -1,12 +1,12 @@
 ﻿{
-  "Title": "Paramètres de langue",
+  "Title": "Parametres de langue",
   "Prompt": "Changer la langue du menu",
   "AvailableLanguages": [
     "es:Espagnol",
     "en:Anglais",
     "de:Allemand",
-    "fr:Français",
+    "fr:Francais",
     "pt:Portugais",
-    "nl:Néerlandais"
+    "nl:Neerlandais"
   ]
 }

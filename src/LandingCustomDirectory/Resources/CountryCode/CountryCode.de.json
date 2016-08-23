@@ -1,6 +1,6 @@
 ﻿{
-  "Title": "Ländercodes",
-  "Prompt": "Liste der Ländercodes",
+  "Title": "Landercodes",
+  "Prompt": "Liste der Landercodes",
   "Countries": [
     "AR : Argentinien",
     "AU : Australien",
@@ -16,7 +16,7 @@
     "PE : Peru",
     "PY : Paraguay",
     "US : USA",
-    "UK : Vereinigtes Königreich",
+    "UK : Vereinigtes Konigreich",
     "UY : Uruguay",
     "VE : Venezuela"
   ]

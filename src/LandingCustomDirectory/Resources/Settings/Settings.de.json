@@ -1,8 +1,8 @@
 ﻿{
   "Title": "Konfigurationen",
-  "Prompt": "Wählen Sie eine Option",
+  "Prompt": "Wahlen Sie eine Option",
   "ItemLanguageSettingsName": "Spracheinstellungen",
   "ItemLanguageSettingsUrl": "LanguageSettings.aspx",
-  "ItemCountryCodesName": "Ländercodes",
+  "ItemCountryCodesName": "Landercodes",
   "ItemCountryCodesUrl": "CountryCodes.aspx"
 }

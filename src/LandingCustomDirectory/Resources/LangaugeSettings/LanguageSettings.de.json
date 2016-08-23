@@ -1,12 +1,12 @@
 ﻿{
   "Title": "Spracheinstellungen",
-  "Prompt": "Ändern Sie die Menüsprache",
+  "Prompt": "Andern Sie die Menusprache",
   "AvailableLanguages": [
     "es:Spanisch",
     "en:Englisch",
     "de:Deutsch",
-    "fr:Französisch",
+    "fr:Franzosisch",
     "pt:Portugiesisch",
-    "nl:Holländisch"
+    "nl:Hollandisch"
   ]
 }
