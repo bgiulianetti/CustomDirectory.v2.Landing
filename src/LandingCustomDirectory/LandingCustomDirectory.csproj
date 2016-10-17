@@ -207,6 +207,10 @@
     <Content Include="Resources\LangaugeSettings\LanguageSettings.pt.json" />
     <Content Include="Resources\LangaugeSettings\LanguageSettings.nl.json" />
     <Content Include="Resources\LangaugeSettings\LanguageSettings.de.json" />
+    <Content Include="Resources\CountryCode\CountryCode.it.json" />
+    <Content Include="Resources\Landing\Landing.it.json" />
+    <Content Include="Resources\LangaugeSettings\LanguageSettings.it.json" />
+    <Content Include="Resources\Settings\Settings.it.json" />
     <None Include="Web.Argentina.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>

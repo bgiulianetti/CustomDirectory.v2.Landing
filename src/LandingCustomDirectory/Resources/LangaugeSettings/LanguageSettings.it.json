@@ -1,0 +1,13 @@
+﻿{
+  "Title": "Impostazioni della lingua",
+  "Prompt": "Cambiare la lingua del menu",
+  "AvailableLanguages": [
+    "es:Spagnolo",
+    "en:Inglese",
+    "de:Tedesco",
+    "fr:Francese",
+    "it:Italiano",
+    "pt:Portoghese",
+    "nl:Olandese"
+  ]
+}

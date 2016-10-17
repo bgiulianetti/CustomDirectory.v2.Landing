@@ -1,0 +1,11 @@
+﻿{
+  "ButtonCancel": "Cancel",
+  "ButtonSearch": "Ricerca",
+  "ButtonSettings": "Config",
+  "Prompt": "Immettere i criteri di ricerca",
+  "SearchCountry": "Paese",
+  "SearchLastname": "Cognome",
+  "SearchName": "Nome",
+  "SearchNumber": "Numero",
+  "Title": "Elenco Unificato"
+}
